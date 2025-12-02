@@ -202,7 +202,7 @@ body {
     }
 
     .chat-window {
-        padding-right: 20px;
+        padding-right: 15px;
     }
 
     .answer {
@@ -214,4 +214,15 @@ body {
         margin-right: 10px;
         padding: 18px 10px 18px 15px;
     }
+}
+
+@media only screen and (min-width:577px) and (max-width: 870px) {
+
+    .chat-container{
+        max-width: 95%;
+    }
+    .chat-window {
+        padding-right: 15px;
+    }
+    
 }
