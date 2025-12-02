@@ -1,5 +1,4 @@
 let savedQuestions = [];
-const MAX_QUESTIONS = 5;
 
 const chatWindow = document.getElementById('chat-window');
 const chatInput = document.getElementById('chat-input');
@@ -37,10 +36,6 @@ function hideLoader() {
 // adding question
 function addQuestion(questionText) {
     savedQuestions.push(questionText);
-
-    if (savedQuestions.length > MAX_QUESTIONS) {
-        savedQuestions.shift();
-    }
 
     const chatItem = document.createElement('div');
     chatItem.className = 'chat-item';
