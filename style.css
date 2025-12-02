@@ -7,6 +7,10 @@ body {
     --primary-background: #c4dbf3;
     --secondary-background: #c4dbf3;
     --primary-font-color:  #267ed6d5;
+    --font-fourtenn:14px;
+    --font-sixteen:16px;
+    --font-eighteen:18px;
+    --font-twenty:20px;
 }
 
 .chat-container {
@@ -19,7 +23,7 @@ body {
 .header-title {
     color: var(--primary-font-color);
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: var(--font-fourtenn);
     margin-bottom: 30px;
 }
 
@@ -49,7 +53,7 @@ body {
 }
 
 .question {
-    font-size: 20px;
+    font-size: var(--font-twenty);
     font-weight: bold;
     color: #0d1b3f;
     display: flex;
@@ -64,7 +68,7 @@ body {
     background: var(--primary-background);
     padding: 22px 52px 22px 30px;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: var(--font-sixteen);
     line-height: 1.5;
     color: rgb(94, 94, 94);
     position: relative;
@@ -106,7 +110,7 @@ body {
 .chat-input input {
     border: none;
     flex: 1;
-    font-size: 16px;
+    font-size: var(--font-sixteen);
     outline: none;
 }
 
@@ -127,14 +131,14 @@ body {
 
 @media only screen and (max-width: 576px) {
     .question {
-        font-size: 18px;  
+        font-size: var(--font-eighteen);  
     }
     .chat-window {
         padding-right: 20px;
     }
 
     .answer {
-        font-size: 14px; 
+        font-size: var(--font-fourtenn); 
         padding: 18px 40px 18px 25px; 
     }
     .chat-input{
